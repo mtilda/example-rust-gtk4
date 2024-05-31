@@ -12,7 +12,7 @@ fn main() -> glib::ExitCode {
         .build();
     app.connect_activate(load_hello_world_window);
     app.connect_activate(load_squares_widget_window);
-    app.connect_activate(load_custom_loadable);
+    app.connect_activate(load_custom_buildable);
     app.run()
 }
 
@@ -44,7 +44,7 @@ fn load_squares_widget_window(app: &gtk::Application) {
 /** Load and present a window with the Custom Buildable example
  * SOURCE: https://github.com/gtk-rs/gtk4-rs/blob/master/examples/custom_buildable/main.rs
  */
-fn load_custom_loadable(app: &gtk::Application) {
+fn load_custom_buildable(app: &gtk::Application) {
     CustomBuildable::static_type();
 
     let ui_src = include_str!("window.xml");
