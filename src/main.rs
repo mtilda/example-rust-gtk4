@@ -7,7 +7,7 @@ use squares_widget::SquaresWidget;
 
 fn main() -> glib::ExitCode {
     let app = gtk::Application::builder()
-        .application_id("com.github.gtk-rs.examples.squares")
+        .application_id("com.example-rust-gtk4")
         .build();
     app.connect_activate(load_hello_world_window);
     app.connect_activate(load_squares_widget_window);
