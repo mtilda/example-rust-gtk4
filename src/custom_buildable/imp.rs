@@ -1,5 +1,4 @@
 // SOURCE: https://github.com/gtk-rs/gtk4-rs/blob/master/examples/custom_buildable/custom_buildable/imp.rs
-use gtk4 as gtk;
 use gtk::{glib, prelude::*, subclass::prelude::*};
 
 #[derive(Debug, Default, gtk::CompositeTemplate)]

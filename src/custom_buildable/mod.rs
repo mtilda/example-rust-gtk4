@@ -1,7 +1,6 @@
 // SOURCE: https://github.com/gtk-rs/gtk4-rs/blob/master/examples/custom_buildable/custom_buildable/mod.rs
 mod imp;
 use gtk::{glib, prelude::*, subclass::prelude::*};
-use gtk4 as gtk;
 
 glib::wrapper! {
     pub struct CustomBuildable(ObjectSubclass<imp::CustomBuildable>)

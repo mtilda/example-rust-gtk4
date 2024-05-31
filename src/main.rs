@@ -3,7 +3,6 @@ mod squares_widget;
 
 use custom_buildable::CustomBuildable;
 use gtk::{glib, prelude::*};
-use gtk4 as gtk;
 use squares_widget::SquaresWidget;
 
 fn main() -> glib::ExitCode {
