@@ -1,5 +1,4 @@
 // SOURCE: https://github.com/gtk-rs/gtk4-rs/blob/master/examples/custom_buildable/custom_buildable/imp.rs
-use gtk4 as gtk;
 use gtk::{glib, prelude::*, subclass::prelude::*};
 
 #[derive(Debug, Default, gtk::CompositeTemplate)]
@@ -37,19 +36,7 @@ impl ObjectImpl for CustomBuildable {
     // Here you need to unparent all direct children
     // of your template.
     fn dispose(&self) {
-        /* FIXME:
-        
-        Source code from the original example panics with the following error:
-
-            error[E0599]: no method named `dispose_template` found for reference `&custom_buildable::imp::CustomBuildable` in the current scope
-
-        Removing the line below, the program runs, but when the window is closed, the following warning is printed:
-
-            Gtk-WARNING **: 19:23:52.941: Finalizing CustomBuildable 0x55bcfa532b90, but it still has children left:
-            - GtkBox 0x55bcfa532ff0
-
-        */
-        // self.dispose_template();
+        self.dispose_template();
     }
 }
 

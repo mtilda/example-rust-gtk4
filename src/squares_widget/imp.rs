@@ -1,5 +1,4 @@
 // SOURCE: https://github.com/gtk-rs/gtk4-rs/blob/master/examples/squares/squares_widget/imp.rs
-use gtk4 as gtk;
 use std::str::FromStr;
 
 use gtk::{gdk, glib, graphene, prelude::*, subclass::prelude::*};
